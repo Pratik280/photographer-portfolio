@@ -1,0 +1,27 @@
+@mixin normal-text($font-size: var(--fs-400), $line-height: 1.5) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  color: var(--clr-grayish-blue);
+}
+
+@mixin bold-text($font-size: var(--fs-600), $line-height: 1){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  color: var(--clr-dark-grayish-blue);
+}
+
+@mixin split($gap: 1rem, $flex-basis: 30%, $min-width: 25rem) {
+  display: flex;
+  gap: $gap;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &>* {
+    flex-basis: $flex-basis;
+    min-width: $min-width;
+  }
+}

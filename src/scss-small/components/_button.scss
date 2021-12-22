@@ -1,0 +1,36 @@
+@use '../abstracts';
+@use '../base';
+
+.btn {
+  display: inline-block;
+  // font-size: var(--fs-400);
+  text-align: center;
+  // font-family: var(--ff-primary);
+  // font-weight: 600;
+  // color: #fff;
+  // background: var(--btn-bgcolor, black);
+  padding: 1.15rem 3.5rem;
+  border-radius: 50vw;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: transform 250ms ease-in-out;
+  &:hover, &:focus {
+    transform: translateY(-5%);
+    background-color: #5dccbb;
+  } 
+
+  // &--ios { 
+  //     --btn-bgcolor: hsl(171, 66%, 44%); 
+  //     &:hover,
+  //     &:focus {
+  //     background-color: #5dccbb;
+  //   }
+  // }
+  
+  // &--mac { 
+  //     --btn-bgcolor: hsl(233, 100%, 69%); 
+  //     &:hover,
+  //     &:focus {
+  //     background-color: #8896ff;
+  //   }
+  // }
+}

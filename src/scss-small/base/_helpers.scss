@@ -1,0 +1,14 @@
+.container{
+  margin-inline: auto;
+  width: min(90%, 150rem);
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacing > *+* {
+  margin-top: var(--spacer, 2rem);
+}
