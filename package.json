@@ -1,0 +1,26 @@
+{
+  "name": "photographer-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss-watch": "sass -w src/scss/main.css public/styles/style.css",
+    "scss-build": "sass src/scss/main.css public/styles/style.css",
+    "dev": "live-server public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pratik280/photographer-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pratik280/photographer-portfolio/issues"
+  },
+  "homepage": "https://github.com/Pratik280/photographer-portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.45.1"
+  }
+}
