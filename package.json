@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss-watch": "sass -w src/scss/main.css public/styles/style.css",
-    "scss-build": "sass src/scss/main.css public/styles/style.css",
+    "scss-watch": "sass -w src/scss/main.scss public/styles/style.css",
+    "scss-build": "sass src/scss/main.scss public/styles/style.css",
     "dev": "live-server public/"
   },
   "repository": {
