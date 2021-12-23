@@ -95,17 +95,24 @@ body {
   align-items: center;
 }
 .lightbox__image {
-  height: 75vh;
-  width: auto;
+  height: auto;
+  width: 85vw;
+  padding: 1rem;
   object-fit: cover;
-  padding: 2rem;
   border: 1px solid white;
+}
+@media screen and (min-width: 45em) {
+  .lightbox__image {
+    height: 75vh;
+    width: auto;
+    padding: 2rem;
+  }
 }
 
 .main {
   background: var(--clr-gray-800);
 }
-.main__grid {
+.main .grid {
   --gap: 2rem;
   --num-cols: 1;
   --row-height: 30rem;
@@ -115,28 +122,32 @@ body {
   grid-auto-rows: var(--row-height);
 }
 @media screen and (min-width: 45em) {
-  .main__grid {
+  .main .grid {
     --num-cols: 2;
     --row-height: 35rem;
   }
 }
 @media screen and (min-width: 60em) {
-  .main__grid {
+  .main .grid {
     --num-cols: 4;
     --row-height: 40rem;
   }
 }
 @media screen and (min-width: 90em) {
-  .main__grid {
+  .main .grid {
     --num-cols: 6;
   }
 }
-
-.main img {
+.main .grid__img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   cursor: pointer;
+  position: relative;
+  transition: transform 150ms ease-in-out;
+}
+.main .grid__img:hover, .main .grid__img:focus {
+  transform: scale(1.01);
 }
 
 @media screen and (min-width: 60em) {

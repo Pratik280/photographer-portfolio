@@ -3,8 +3,8 @@ lightbox.id = "lightbox";
 lightbox.className = "lightbox";
 document.body.appendChild(lightbox)
 
-const main = document.querySelector(".main");
-const gridImages = main.querySelectorAll('img');
+const grid = document.querySelector(".grid");
+const gridImages = grid.querySelectorAll('.grid__img');
 gridImages.forEach(image => {
   image.addEventListener("click", e => {
     lightbox.classList.add('lightbox--active')

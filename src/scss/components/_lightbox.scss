@@ -14,10 +14,15 @@
   }
 
   &__image {
-    height: 75vh;
-    width: auto;
+    height: auto;
+    width: 85vw;
+    padding: 1rem;
+    @media screen and (min-width:45em){
+      height: 75vh;
+      width: auto;
+      padding: 2rem;
+    }
     object-fit: cover;
-    padding: 2rem;
     border: 1px solid white;
   }
 }
