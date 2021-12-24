@@ -16,19 +16,14 @@
   &__image {
     height: auto;
     width: 85vw;
-    padding: 1rem;
+    padding: 0.25rem;
+    object-fit: cover;
+    border: 2px solid white;
+
     @media screen and (min-width:45em){
       height: 75vh;
       width: auto;
-      padding: 2rem;
+      padding: 0.5rem;
     }
-    object-fit: cover;
-    border: 1px solid white;
   }
 }
-
-// .lightbox--active {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }

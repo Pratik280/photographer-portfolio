@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root{
 
   /* ==== colors is hsl ==== */
 
-  --clr-gray-900: #111827;
+  --clr-black: #0f0f0f;
+  --clr-white: #ffffff;
+
   --clr-gray-800: #1f2937;
   --clr-gray-700: #374151;
   --clr-gray-600: #4b5563;
@@ -20,7 +25,7 @@
   /* font */
   font-size: 62.5%;
 
-  --fs-900: clamp(7.5rem, 10vw, 12rem);
+  --fs-900: clamp(5rem, 10vw, 12rem);
   --fs-700: clamp(5rem, 10vw, 10rem);
   --fs-500: clamp(1.5rem, 2vw, 2rem);
   --fs-400: clamp(1.25rem, 2vw, 1.75rem);
@@ -28,13 +33,12 @@
   --ff-primary: 'Poppins', sans-serif; // 100 400 600 700
   // --ff-secondary: 'Spartan', sans-serif;
 
-
   /* scroll-behavior: smooth; */
 }
 
 body {
   font-family: var(--ff-primary);
   font-weight: 400;
-  color: var(--clr-gray-800);
-  background: var(--clr-gray-100);
+  color: var(--clr-gray-100);
+  background: var(--clr-gray-800);
 }

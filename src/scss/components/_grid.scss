@@ -1,12 +1,12 @@
 .main {
-  background: var(--clr-gray-800);
-  padding: 7.5rem 0;
+  background: var(--clr-black);
+  padding: 2.5rem 0;
 }
 
 .gallery {
   --gap: 2rem;
   --num-cols: 1;
-  --row-height: 30rem;
+  --row-height: 20rem;
 
   display: grid;
   gap: var(--gap);
@@ -16,11 +16,11 @@
 
   @media screen and (min-width:45em) {
     --num-cols: 2;
-    --row-height: 35rem;
+    --row-height: 22.5rem;
   }
   @media screen and (min-width:60em) {
     --num-cols: 4;
-    --row-height: 40rem;
+    --row-height: 25rem;
   }
   @media screen and (min-width:90em) {
     --num-cols: 6;
