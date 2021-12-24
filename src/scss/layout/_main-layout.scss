@@ -1,41 +1,61 @@
 .main {
   background: var(--clr-gray-800);
+  padding: 7.5rem 0;
+}
 
-  .grid {
-    --gap: 2rem;
-    --num-cols: 1;
-    --row-height: 30rem;
+.gallery {
+  --gap: 2rem;
+  --num-cols: 1;
+  --row-height: 30rem;
 
-    display: grid;
-    gap: var(--gap);
+  display: grid;
+  gap: var(--gap);
 
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
 
-    @media screen and (min-width:45em) {
-      --num-cols: 2;
-      --row-height: 35rem;
-    }
-    @media screen and (min-width:60em) {
-      --num-cols: 4;
-      --row-height: 40rem;
-    }
-    @media screen and (min-width:90em) {
-      --num-cols: 6;
-    }
+  @media screen and (min-width:45em) {
+    --num-cols: 2;
+    --row-height: 35rem;
+  }
+  @media screen and (min-width:60em) {
+    --num-cols: 4;
+    --row-height: 40rem;
+  }
+  @media screen and (min-width:90em) {
+    --num-cols: 6;
+  }
+}
 
-    &__img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+.gallery__block {
+
+  position: relative;
+  &--img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+  }
+
+  &--text-on-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform, opacity 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
       cursor: pointer;
-      position: relative;
-      transition: transform 150ms ease-in-out;
-    }
-
-    &__img:hover,
-    &__img:focus {
-      transform: scale(1.01);
     }
   }
 }
