@@ -1,0 +1,24 @@
+@use '../abstracts';
+@use '../base';
+
+.main {
+  background: var(--clr-black);
+  padding: 5rem 0;
+
+  &__heading {
+    @include abstracts.typography(
+      var(--ff-primary),
+      400,
+      var(--fs-700),
+      var(--clr-gray-100),
+      1.5
+    );
+    text-align: center;
+    @media screen and (min-width: 65em) {
+      text-align: start;
+    }
+    margin-block: 1rem;
+  }
+}
+
+

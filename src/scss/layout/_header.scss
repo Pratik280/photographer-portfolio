@@ -55,7 +55,8 @@
     pointer-events: none;
     color: white;
   }
-  &__contact {
+
+  &__wrapper > * {
     pointer-events: auto;
   }
 }
@@ -114,12 +115,6 @@
   }
   &__text-description {
 
-    font-family: var(--ff-primary);
-    font-weight: 400;
-    font-size: var(--fs-400);
-    color: var(--clr-gray-100);
-    line-height: 1.5;
-
     @include abstracts.typography(
       var(--ff-primary),
       400,
@@ -127,7 +122,7 @@
       var(--clr-gray-100),
       1.5
     );
-
+    margin-bottom: 1rem;
 
     max-width: 80rem;
     opacity: 0.75;
@@ -136,4 +131,3 @@
     }
   }
 }
-
