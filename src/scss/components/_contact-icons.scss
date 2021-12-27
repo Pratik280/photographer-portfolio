@@ -1,0 +1,18 @@
+.contact__icon {
+  margin-top: 1rem;
+  fill: var(--clr-gray-100);
+  transition: transform 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+    fill: var(--clr-red-500);
+  }
+
+  &--facebook {
+    margin-left: 1rem;
+  }
+}
+
+

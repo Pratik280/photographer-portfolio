@@ -47,10 +47,7 @@ a {
   --clr-gray-600: #4b5563;
   --clr-gray-50: #f9fafb;
   --clr-gray-100: #f3f4f6;
-  --clr-primary-one: #1f2937;
-  --clr-primary-two: hsl(,,);
-  --clr-secondary-one: hsl(,,);
-  --clr-secondary-two: hsl(,,);
+  --clr-red-500: #FF5454;
   /* font */
   font-size: 62.5%;
   --fs-900: clamp(5rem, 10vw, 12rem);
@@ -237,6 +234,20 @@ body {
   }
 }
 
+.contact__icon {
+  margin-top: 1rem;
+  fill: var(--clr-gray-100);
+  transition: transform 250ms ease-in-out;
+}
+.contact__icon:hover, .contact__icon:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+  fill: var(--clr-red-500);
+}
+.contact__icon--facebook {
+  margin-left: 1rem;
+}
+
 .header {
   background: var(--clr-black);
   position: relative;
@@ -297,6 +308,9 @@ body {
     background: rgba(1, 1, 1, 0.725);
   }
 }
+.header__contact {
+  pointer-events: auto;
+}
 
 .bg1 {
   background: url("../assets/images/p-1.jpg");
@@ -349,6 +363,12 @@ body {
   font-size: var(--fs-400);
   color: var(--clr-gray-100);
   line-height: 1.5;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: var(--fs-400);
+  color: var(--clr-gray-100);
+  line-height: 1.5;
+  text-transform: none;
   max-width: 80rem;
   opacity: 0.75;
 }

@@ -1,18 +1,18 @@
-// @mixin normal-text($font-size: var(--fs-400), $line-height: 1.5) {
-//   font-size: $font-size;
-//   line-height: $line-height;
-//   font-family: var();
-//   font-weight: 400;
-//   color: var();
-// }
-
-// @mixin bold-text($font-size: var(--fs-600), $line-height: 1){
-//   font-size: $font-size;
-//   line-height: $line-height;
-//   font-family: var();
-//   font-weight: 600;
-//   color: var();
-// }
+@mixin typography(
+  $fontFamily: var(--ff-primary),
+  $fontWeight: 400, 
+  $fontSize: var(--ff-400),
+  $color: var(--clr-gray-100),
+  $lineHeight: 1.5,
+  $textTransform: none
+  ){
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $color;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+}
 
 @mixin split($gap: 1rem, $flex-basis: 30%, $min-width: 25rem) {
   display: flex;

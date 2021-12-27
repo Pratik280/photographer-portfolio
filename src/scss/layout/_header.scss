@@ -55,6 +55,9 @@
     pointer-events: none;
     color: white;
   }
+  &__contact {
+    pointer-events: auto;
+  }
 }
 
 .bg1 {
@@ -77,12 +80,16 @@
 
 .header {
   &__heading {
-    font-family: var(--ff-primary);
-    font-weight: 200;
-    font-size: var(--fs-900);
-    color: var(--clr-gray-100);
-    line-height: 0.85;
-    text-transform: uppercase;
+
+    @include abstracts.typography(
+      var(--ff-primary),
+      200,
+      var(--fs-900),
+      var(--clr-gray-100),
+      0.85,
+      uppercase
+    );
+
     opacity: 1;
     @media screen and (min-width: 65em) {
       opacity: 0.9;
@@ -90,23 +97,38 @@
     margin: 1rem 0;
   }
   &__heading-two {
-    font-family: var(--ff-primary);
-    font-weight: 400;
-    font-size: var(--fs-500);
-    color: var(--clr-gray-100);
-    line-height: 1.5;
-    text-transform: uppercase;
+
+    @include abstracts.typography(
+      var(--ff-primary),
+      400,
+      var(--fs-500),
+      var(--clr-gray-100),
+      1.5,
+      uppercase
+    );
+
     opacity: 0.75;
     @media screen and (min-width: 65em) {
       opacity: 0.9;
     }
   }
   &__text-description {
+
     font-family: var(--ff-primary);
     font-weight: 400;
     font-size: var(--fs-400);
     color: var(--clr-gray-100);
     line-height: 1.5;
+
+    @include abstracts.typography(
+      var(--ff-primary),
+      400,
+      var(--fs-400),
+      var(--clr-gray-100),
+      1.5
+    );
+
+
     max-width: 80rem;
     opacity: 0.75;
     @media screen and (min-width: 65em) {
@@ -114,5 +136,4 @@
     }
   }
 }
-
 
