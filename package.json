@@ -2,9 +2,11 @@
   "name": "photographer-portfolio",
   "version": "1.0.0",
   "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "rm -rf .parcel-cache dist && parcel build src/index.html"
+    "clean": "rm -rf .parcel-cache/ dist/ dev-dist/",
+    "dev": "parcel src/index.html --dist-dir dev-dist",
+    "build": "rm -rf .parcel-cache/ dev-dist/ dist/ && parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "homepage": "https://github.com/Pratik280/photographer-portfolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1"
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.4.5"
   }
 }
