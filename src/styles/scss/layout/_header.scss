@@ -44,7 +44,7 @@
     left: 0;
     height:100% ;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.8),transparent), url('../assets/images/p-2.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8),transparent), url('../../../assets/images/hero/p-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,11 +62,11 @@
 }
 
 .bg1 {
-  background: url('../assets/images/p-1.jpg');
+  background: url('../../../assets/images/hero/p-1.jpg');
 }
 
 .bg2 {
-  background: url('../assets/images/p-2.jpg');
+  background: url('../../../assets/images/hero/p-2.jpg');
 }
 
 // typography
