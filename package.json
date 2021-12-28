@@ -2,8 +2,9 @@
   "name": "photographer-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "rm -rf .parcel-cache dist && parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,7 @@
   },
   "homepage": "https://github.com/Pratik280/photographer-portfolio#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1"
   }
 }
