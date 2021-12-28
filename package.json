@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss-watch": "sass -w src/styles/scss/main.scss src/styles/css/style.css",
-    "scss-build": "sass src/styles/scss/main.scss src/styles/css/style.css",
-    "dev": "live-server src/"
   },
   "repository": {
     "type": "git",
@@ -20,7 +17,5 @@
   },
   "homepage": "https://github.com/Pratik280/photographer-portfolio#readme",
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "sass": "^1.45.1"
   }
 }
