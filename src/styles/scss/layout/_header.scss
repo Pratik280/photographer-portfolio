@@ -11,7 +11,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.25rem;
+    grid-gap: 0.5rem;
     visibility: hidden;
     @media screen and (min-width: 65em) {
       visibility: visible;
@@ -62,11 +62,11 @@
 }
 
 .bg1 {
-  background: url('../../assets/images/hero/p-1.jpg');
+  background: url('../../assets/images/hero-test/p-1.webp');
 }
 
 .bg2 {
-  background: url('../../assets/images/hero/p-2.jpg');
+  background: url('../../assets/images/hero-test/p-2.webp');
 }
 
 // typography
