@@ -1,2 +1,2 @@
 !function(){var e=document.createElement("div");e.id="lightbox",e.className="lightbox",document.body.appendChild(e),document.querySelector(".gallery").querySelectorAll(".gallery__block").forEach((function(t){var l=document.querySelector(".gallery__block--img");t.addEventListener("click",(function(t){e.classList.add("lightbox--active");var c=document.createElement("img");for(c.className="lightbox__image",c.src=l.src;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(c)}))})),e.addEventListener("click",(function(t){t.target===t.currentTarget&&e.classList.remove("lightbox--active")}))}();
-//# sourceMappingURL=index.56426af0.js.map
+//# sourceMappingURL=index.7617abb6.js.map

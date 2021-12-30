@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf .parcel-cache/ dist/",
     "dev": "parcel src/index.html --open",
-    "build": "rm -rf .parcel-cache/ dist/ && parcel build src/index.html"
+    "build": "rm -rf .parcel-cache/ dist/ && parcel build --dist-dir docs/ src/index.html"
   },
   "repository": {
     "type": "git",
