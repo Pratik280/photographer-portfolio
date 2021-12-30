@@ -4,9 +4,9 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": "rm -rf .parcel-cache/ dist/",
-    "dev": "parcel src/index.html --open",
-    "build": "rm -rf .parcel-cache/ dist/ && parcel build --dist-dir docs/ src/index.html"
+    "clean": "rm -rf .parcel-cache/ dist/ docs/",
+    "dev": "parcel src/index.html --open --public-url ./",
+    "build": "rm -rf .parcel-cache/ dist/ docs/ && parcel build --dist-dir docs src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
