@@ -1,6 +1,6 @@
 @mixin typography(
   $fontFamily: var(--ff-primary),
-  $fontWeight: 400, 
+  $fontWeight: normal, 
   $fontSize: var(--ff-400),
   $color: var(--clr-gray-100),
   $lineHeight: 1.5,

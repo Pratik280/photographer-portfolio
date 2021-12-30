@@ -84,10 +84,10 @@
 
     @include abstracts.typography(
       var(--ff-primary),
-      200,
+      lighter,
       var(--fs-900),
       var(--clr-gray-100),
-      0.85,
+      1,
       uppercase
     );
 
