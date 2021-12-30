@@ -9,7 +9,7 @@
 
   --gap: 2rem;
   --num-cols: 1;
-  --row-height: 20rem;
+  --row-height: 25rem;
 
   display: grid;
   gap: var(--gap);
@@ -21,13 +21,13 @@
   // on tablet (greater than 45em) view-port two column
   @media screen and (min-width:45em) {
     --num-cols: 2;
-    --row-height: 22.5rem;
+    --row-height: 20rem;
   }
 
   // on desktop (greater than 60em) view-port four column
   @media screen and (min-width:60em) {
     --num-cols: 4;
-    --row-height: 25rem;
+    --row-height: 20rem;
   }
 
   // on desktop (greater than 90em) view-port siz column
@@ -92,12 +92,12 @@
 // x-rows-(a) : where "a" ranges between 1 and 2 
 //              so that element will span across "a" rows
 @media screen and (min-width:60em) {
-  .x-cols-1 { grid-column: span 1; }
-  .x-cols-2 { grid-column: span 2; }
-  .x-cols-3 { grid-column: span 3; }
-  .x-cols-4 { grid-column: span 4; }
-  .x-rows-1 { grid-row: span 1; }
-  .x-rows-2 { grid-row: span 2; }
+  .m-cols-1 { grid-column: span 1; }
+  .m-cols-2 { grid-column: span 2; }
+  .m-cols-3 { grid-column: span 3; }
+  .m-cols-4 { grid-column: span 4; }
+  .m-rows-1 { grid-row: span 1; }
+  .m-rows-2 { grid-row: span 2; }
 }
 
 // on large screen size (view-port greater than 90em)
@@ -106,14 +106,14 @@
 // x-rows-(a) : where "a" ranges between 1 and 4 
 //              so that element will span across "a" rows
 @media screen and (min-width:90em) {
-  .xl-cols-1 { grid-column: span 1; }
-  .xl-cols-2 { grid-column: span 2; }
-  .xl-cols-3 { grid-column: span 3; }
-  .xl-cols-4 { grid-column: span 4; }
-  .xl-cols-5 { grid-column: span 5; }
-  .xl-cols-6 { grid-column: span 6; }
-  .xl-rows-1 { grid-row: span 1; }
-  .xl-rows-2 { grid-row: span 2; }
-  .xl-rows-3 { grid-row: span 3; }
-  .xl-rows-4 { grid-row: span 4; }
+  .l-cols-1 { grid-column: span 1; }
+  .l-cols-2 { grid-column: span 2; }
+  .l-cols-3 { grid-column: span 3; }
+  .l-cols-4 { grid-column: span 4; }
+  .l-cols-5 { grid-column: span 5; }
+  .l-cols-6 { grid-column: span 6; }
+  .l-rows-1 { grid-row: span 1; }
+  .l-rows-2 { grid-row: span 2; }
+  .l-rows-3 { grid-row: span 3; }
+  .l-rows-4 { grid-row: span 4; }
 }
