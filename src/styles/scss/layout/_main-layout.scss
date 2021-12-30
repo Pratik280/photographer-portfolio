@@ -7,12 +7,16 @@
 
   &__heading {
     @include abstracts.typography(
-      var(--ff-primary),
-      400,
-      var(--fs-700),
-      var(--clr-gray-100),
-      1.5
+    $fontFamily:var(--ff-primary),
+    $fontWeight: 400,
+    $fontSize: var(--fs-700),
+    $color: var(--clr-gray-100),
+    $lineHeight: 1.5,
+    $textTransform: none
     );
+
+    // on mobile heading has text-align center
+    // on tablet and above (>65em) text-align start
     text-align: center;
     @media screen and (min-width: 65em) {
       text-align: start;
