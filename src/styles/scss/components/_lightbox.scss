@@ -1,13 +1,23 @@
+// lightbox is displayed when clicked on small image from grid
+// and closed when clicked anywhere on the screen
+
 .lightbox {
   position: fixed;
   z-index: 1000;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.8);
   display: none;
+  // by default lightbox is hidded
 
   &--active {
+
+    // onclick lightbox--active class is added to the element
+    // and lightbox is displayed
+    // onclick : display none -> flex
+
     display: flex;
     justify-content: center;
     align-items: center;
