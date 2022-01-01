@@ -9,7 +9,9 @@
 
   --gap: 2rem;
   --num-cols: 1;
-  --row-height: 25rem;
+  // --row-height: auto;
+  // TODO : to make height auto on mobile
+  --row-height: 35rem;
 
   display: grid;
   gap: var(--gap);
@@ -21,7 +23,6 @@
   // on tablet (greater than 45em) view-port two column
   @media screen and (min-width:45em) {
     --num-cols: 2;
-    --row-height: 20rem;
   }
 
   // on desktop (greater than 60em) view-port four column
@@ -46,6 +47,7 @@
 
   &--img{
     object-fit: cover;
+    
     width: 100%;
     height: 100%;
     cursor: pointer;
